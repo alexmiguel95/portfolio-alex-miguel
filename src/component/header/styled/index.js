@@ -34,7 +34,7 @@ export const StyledHeader = styled.header`
 
     .menu-hamburguer{
         color: white;
-        font-size: 75px;
+        font-size: 70px;
         margin-right: 25px;
     }
 `;
