@@ -28,6 +28,12 @@ export const StyledHeader = styled.header`
                 height: 76px;
                 width: 76px;
                 margin: 25px 0 25px 25px;
+
+                @media(max-width: 992px){
+                    height: 56px;
+                    width: 56px;
+                    margin: 15px 0 15px 25px;
+                }
             }
         }
     }
