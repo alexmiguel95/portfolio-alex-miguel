@@ -39,7 +39,7 @@ const Header = () => {
                             <a href={'/#portfolio'}>PORTFOLIO</a>
                         </Menu.Item>
                         <Menu.Item key='/#resumo' className={'menu'}>
-                            <a href={'/#resumo'}>RESUMO</a>
+                            <a href={'/#resumo'}>SOBRE MIM</a>
                         </Menu.Item>
                         <Menu.Item key='/#contato' className={'menu'}>
                             <a href={'/#contato'}>CONTATO</a>
