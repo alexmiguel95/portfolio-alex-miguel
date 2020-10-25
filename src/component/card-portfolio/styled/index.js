@@ -38,6 +38,7 @@ const StyledDivMainContainer = styled.div`
                     padding: 4px 10px 4px 10px;
                     box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.73);
                     margin-right: 10px;
+                    margin-top: 10px;
                 }
             }
 

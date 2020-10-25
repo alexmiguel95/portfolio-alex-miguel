@@ -28,6 +28,10 @@ export default BtnApresentation;
 const StyledDivContainerBtnPresentation = styled.div`
     text-align: center;
 
+    @media(max-width: 992px){
+         margin-bottom: 40px;
+    }
+
     button{
         background-color: white;
         color: black;
