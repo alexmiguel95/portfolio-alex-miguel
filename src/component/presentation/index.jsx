@@ -39,6 +39,10 @@ const StyledDivCotainerMain = styled.div`
 
         h1, h3 {
             font-weight: bold;
+
+            @media(max-width: 992px){
+                text-align: center;
+            }
         }
 
             h1{
@@ -68,6 +72,7 @@ const StyledDivCotainerMain = styled.div`
             @media(max-width: 992px){
                 font-size: 14px;
                 margin: 15px 0 40px 0; 
+                text-align: justify;
             }
         }
     }

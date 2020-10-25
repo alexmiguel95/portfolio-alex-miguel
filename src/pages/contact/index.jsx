@@ -35,14 +35,14 @@ const Contact = () => {
     return(
         <StyledDivContainerMain>
             <form onSubmit={handleSubmit(submitEmail)}>
-                <label for="name">Nome</label>
+                <label htmlFor="name">Nome</label>
                 <input type='text' id="name" onChange={(e) => setValue("name", e.target.value)} />
 
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type='text' id="email" onChange={(e) => setValue("email", e.target.value)} />
                 {errors.email && <h4>{errors.email.message}</h4>}
 
-                <label for="message">Mensagem</label>
+                <label htmlFor="message">Mensagem</label>
                 <textarea type='text-area' id="message" onChange={(e) => setValue("message", e.target.value)} />
 
                 <input type="submit" value="Enviar" />

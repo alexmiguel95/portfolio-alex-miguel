@@ -4,9 +4,11 @@ import Header from '../../component/header';
 import MyPhoto from '../../component/my-photo';
 import InfoContact from '../../component/info-contact';
 import Presentation from '../../component/presentation';
+import Footer from '../../component/footer';
 import Contact from '../contact';
 import Portfolio from '../portfolio';
 import Resume from '../resume';
+import { FiGithub, FiLinkedin} from 'react-icons/fi';
 
 const Home = () => {
     return(
@@ -25,6 +27,25 @@ const Home = () => {
                 <div className='container-main-presentation'>
                     <Presentation />
                 </div>
+
+                <div className='footer'>
+                    <span>alexmiguel95@gmail.com</span>
+                    <span>(41) 99876 9061</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/alexmiguel95/" target="_blank">
+                                    <FiLinkedin />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/alexmiguel95" target="_blank">
+                                    <FiGithub />
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </ContainerMain>
 
             <Contact />
@@ -32,6 +53,8 @@ const Home = () => {
             <Portfolio />
 
             <Resume />
+
+            <Footer />
         </StyledDivMain>
     );
 }
@@ -51,6 +74,7 @@ const ContainerMain = styled.div`
 
     @media(max-width: 992px){
         flex-direction: column;	
+        height: calc(100vh - 86px);
     }
 
     .container-main-info-contact{
@@ -69,7 +93,6 @@ const ContainerMain = styled.div`
         margin: -126px 0 0 -101px;
         align-self: center; 
 
-          /* Mobile */
         @media(max-width: 992px){
             height: 200px;
             margin: 0 auto;
@@ -84,8 +107,50 @@ const ContainerMain = styled.div`
 
         @media(max-width: 992px){
             margin: 0 auto;
-            margin-top: 60px;
             width: 300px;
+        }
+    }
+
+    .footer{
+        margin: auto 0 15px 0;
+        padding: 0 15px 0 15px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+
+        @media(min-width: 992px){
+            display: none;
+        }
+
+        nav{
+            display: inline-block;
+
+            @media(max-width: 576px){
+                display: none;
+            } 
+
+            ul{
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+
+                li{
+                    display: inline-block;
+
+                    a{
+                        color: rgba(0, 0, 0, 0.85);
+                        font-size: 20px;
+
+                        @media(min-width: 992px){
+                            font-size: 25px;
+                        }
+                    }
+
+                    a[href='https://www.linkedin.com/in/alexmiguel95/']{
+                        margin-right: 8px;
+                    }
+                }
+            }
         }
     }
 `;

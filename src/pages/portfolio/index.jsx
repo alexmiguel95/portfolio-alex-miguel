@@ -36,7 +36,7 @@ const Portfolio = () => {
     return(
         <div>
         {
-            listProjects.map((item) => {
+            listProjects.map((item, key) => {
                 return(
                     <CardPortfolio 
                         nameProject={item.nameProject}
@@ -44,7 +44,8 @@ const Portfolio = () => {
                         description={item.description}
                         technology={item.technology}
                         urlProject={item.urlProject}
-                        imgMockup={item.imgMockup}  
+                        imgMockup={item.imgMockup}
+                        key={key}  
                     />
                 ); 
             })
