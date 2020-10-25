@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FiGithub, FiLinkedin} from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiArrowUpCircle} from 'react-icons/fi';
 
 const Footer = () => {
     return(
@@ -9,11 +9,14 @@ const Footer = () => {
                 <div className='links'>
                     <nav>
                         <ul>
-                            <li><a href=''>Fale Comigo</a></li>
-                            <li><a href=''>Trabalhos</a></li>
-                            <li><a href=''>Sobre</a></li>
+                            <li><a href='#'>Fale Comigo</a></li>
+                            <li><a href='#'>Trabalhos</a></li>
+                            <li><a href='#'>Sobre</a></li>
                         </ul>
                     </nav>
+                    <div className='icon-go-top-page'>
+                        <a href='#'><FiArrowUpCircle /></a>
+                    </div>
                 </div>
 
                 <div className='footer'>
@@ -43,12 +46,19 @@ export default Footer;
 
 
 const StyledDivMainContainer = styled.div`
+    --highlight-color: #4A38FF;
+
     background-color: white;
+    
 
     .container{
         padding: 0 15px 15px 15px;
 
         .links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
             nav ul{
                 list-style-type: none;
                 padding: 0;
@@ -59,6 +69,15 @@ const StyledDivMainContainer = styled.div`
                     a{
                         color: black;
                     }
+                }
+            }
+
+            .icon-go-top-page{
+                font-size: 40px;
+                margin-right: 10px;
+
+                a{
+                    color: var(--highlight-color);
                 }
             }
         }
