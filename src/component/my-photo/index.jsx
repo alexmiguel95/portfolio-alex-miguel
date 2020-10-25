@@ -20,8 +20,8 @@ const StyledFigure = styled.figure`
     
     /* Mobile */
     @media(max-width: 992px){
-        height: 225px;
-        width: 300px;
+        height: 150px;
+        width: 200px;
         margin: 0 auto;
     }
 `;

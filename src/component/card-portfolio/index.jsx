@@ -16,8 +16,8 @@ const CardPortfolio = ({
 
                     <h4>Tecnologias utilizadas:</h4>
                     <div className="container-technology">
-                        {technology.map((item) => {
-                            return <button disabled>{item}</button>
+                        {technology.map((item, key) => {
+                            return <button disabled key={key}>{item}</button>
                         })}
                     </div>
 
