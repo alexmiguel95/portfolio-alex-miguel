@@ -74,7 +74,6 @@ const ContainerMain = styled.div`
 
     @media(max-width: 992px){
         flex-direction: column;	
-        height: calc(100vh - 86px);
     }
 
     .container-main-info-contact{
