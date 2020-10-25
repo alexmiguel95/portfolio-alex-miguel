@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useForm } from "react-hook-form";
 
-const FormContact = () => {
+const Contact = () => {
     const {register, unregister, handleSubmit, setValue, errors} = useForm();
 
     const submitEmail = (data) => {
@@ -51,7 +51,7 @@ const FormContact = () => {
     );
 }
 
-export default FormContact;
+export default Contact;
 
 const StyledDivContainerMain = styled.div`
     --highlight-color: #4A38FF;
