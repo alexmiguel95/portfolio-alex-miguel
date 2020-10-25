@@ -5,26 +5,9 @@ import MyPhoto from '../../component/my-photo';
 import InfoContact from '../../component/info-contact';
 import Presentation from '../../component/presentation';
 import FormContact from '../../component/form-contact';
-import CardPortfolio from '../../component/card-portfolio';
-
-
-/* Import imgs mockup para o component CardPortfolio*/
-import imgMockup from '../../assets/imgs/mockup-project-example.png';
+import Portfolio from '../portfolio';
 
 const Home = () => {
-
-    /* Lista de projetos portfolio */
-    const listProjects = [
-        { 
-            nameProject: 'NOME DO PROJETO',
-            infoProject: 'Informações sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-            description: 'Descrição sobre o que foi feito.',
-            technology: ['React', 'JavaScript', 'HTML', 'CSS'],
-            urlProject: 'www.urldoprojeto.com.br',
-            imgMockup: `${imgMockup}`
-        },
-    ];
-
     return(
         <StyledDivMain>
             <Header />
@@ -45,21 +28,7 @@ const Home = () => {
 
             <FormContact />
 
-            {/* Portfolio */}
-            {
-                listProjects.map((item) => {
-                    return(
-                        <CardPortfolio 
-                            nameProject={item.nameProject}
-                            infoProject={item.infoProject}
-                            description={item.description}
-                            technology={item.technology}
-                            urlProject={item.urlProject}
-                            imgMockup={item.imgMockup}  
-                        />
-                    ); 
-                })
-            }
+            <Portfolio />
         </StyledDivMain>
     );
 }
