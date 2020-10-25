@@ -42,6 +42,7 @@ const StyledDivContainerBtnPresentation = styled.div`
         width: 200px;
         height: 40px;
         cursor: pointer;
+        outline: none;
 
         @media(max-width: 992px){
             font-size: 13px;
