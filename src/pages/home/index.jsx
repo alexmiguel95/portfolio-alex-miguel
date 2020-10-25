@@ -4,6 +4,7 @@ import Header from '../../component/header';
 import MyPhoto from '../../component/my-photo';
 import InfoContact from '../../component/info-contact';
 import Presentation from '../../component/presentation';
+import Footer from '../../component/footer';
 import Contact from '../contact';
 import Portfolio from '../portfolio';
 import Resume from '../resume';
@@ -32,6 +33,8 @@ const Home = () => {
             <Portfolio />
 
             <Resume />
+
+            <Footer />
         </StyledDivMain>
     );
 }
