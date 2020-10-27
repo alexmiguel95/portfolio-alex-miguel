@@ -16,6 +16,7 @@
     "react-hook-form": "^6.9.5",
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.2.2",
     "react-scripts": "3.4.4",
     "responsive-ant-menu": "^1.0.15",
     "styled-components": "^5.2.0"

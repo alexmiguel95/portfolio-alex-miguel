@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../../component/header';
 import MyPhoto from '../../component/my-photo';
 import InfoContact from '../../component/info-contact';
 import Presentation from '../../component/presentation';
-import Footer from '../../component/footer';
 import Contact from '../contact';
 import Portfolio from '../portfolio';
 import Resume from '../resume';
@@ -13,8 +11,6 @@ import { FiGithub, FiLinkedin} from 'react-icons/fi';
 const Home = () => {
     return(
         <StyledDivMain>
-            <Header />
-
             <ContainerMain>
                 <div className='container-main-info-contact'>
                     <InfoContact />
@@ -53,8 +49,6 @@ const Home = () => {
             <Portfolio />
 
             <Resume />
-
-            <Footer />
         </StyledDivMain>
     );
 }

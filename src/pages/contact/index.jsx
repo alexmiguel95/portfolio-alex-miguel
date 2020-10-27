@@ -33,21 +33,23 @@ const Contact = () => {
      
      
     return(
-        <StyledDivContainerMain>
-            <form onSubmit={handleSubmit(submitEmail)}>
-                <label htmlFor="name">Nome</label>
-                <input type='text' id="name" onChange={(e) => setValue("name", e.target.value)} />
+        <div id="contact">
+            <StyledDivContainerMain>
+                <form onSubmit={handleSubmit(submitEmail)}>
+                    <label htmlFor="name">Nome</label>
+                    <input type='text' id="name" onChange={(e) => setValue("name", e.target.value)} />
 
-                <label htmlFor="email">Email</label>
-                <input type='text' id="email" onChange={(e) => setValue("email", e.target.value)} />
-                {errors.email && <h4>{errors.email.message}</h4>}
+                    <label htmlFor="email">Email</label>
+                    <input type='text' id="email" onChange={(e) => setValue("email", e.target.value)} />
+                    {errors.email && <h4>{errors.email.message}</h4>}
 
-                <label htmlFor="message">Mensagem</label>
-                <textarea type='text-area' id="message" onChange={(e) => setValue("message", e.target.value)} />
+                    <label htmlFor="message">Mensagem</label>
+                    <textarea type='text-area' id="message" onChange={(e) => setValue("message", e.target.value)} />
 
-                <input type="submit" value="Enviar" />
-            </form>
-        </StyledDivContainerMain>    
+                    <input type="submit" value="Enviar" />
+                </form>
+            </StyledDivContainerMain>
+        </div>   
     );
 }
 

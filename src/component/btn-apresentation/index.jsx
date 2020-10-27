@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useWindowSize } from '../../hooks'
+import { useWindowSize } from '../../hooks';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const BtnApresentation = () => {
     const [width] = useWindowSize();
@@ -8,15 +9,15 @@ const BtnApresentation = () => {
     if(width > 992) {
         return(
             <StyledDivContainerBtnPresentation>
-                <button className="btn-highlight">MEUS TRABALHOS</button>
-                <button>ME CONHEÇA</button>
+                <Link smooth to="#portfolio" className="btn-highlight">MEUS TRABALHOS</Link>
+                <Link smooth to="#resume">ME CONHEÇA</Link>
             </StyledDivContainerBtnPresentation>
         )
     }else {
         return(
             <StyledDivContainerBtnPresentation>
-                <button className="btn-highlight">PORTFOLIO</button>
-                <button>RESUMO</button>
+                <Link smooth to="#portfolio" className="btn-highlight">PORTFOLIO</Link>
+                <Link smooth to="#resume">RESUMO</Link>
             </StyledDivContainerBtnPresentation>
         )
     }
@@ -32,7 +33,7 @@ const StyledDivContainerBtnPresentation = styled.div`
          margin-bottom: 40px;
     }
 
-    button{
+    a{
         background-color: white;
         color: black;
         border: 2px solid black;
@@ -43,11 +44,14 @@ const StyledDivContainerBtnPresentation = styled.div`
         height: 40px;
         cursor: pointer;
         outline: none;
+        display: inline-block;
+        line-height: 35px;
 
         @media(max-width: 992px){
             font-size: 13px;
             width: 130px;
             height: 35px;
+            line-height: 30px;
         }
     }
 

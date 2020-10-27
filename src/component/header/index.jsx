@@ -5,6 +5,7 @@ import { Menu } from 'antd';
 import 'antd/lib/menu/style/css';
 import 'antd/lib/popover/style/css';
 import { MdMenu, MdClose} from 'react-icons/md';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return(
@@ -18,7 +19,6 @@ const Header = () => {
             </div>
 
             <ResponsiveAntMenu
-                // activeLinkKey={location.pathname}
                 mobileMenuContent=
                 {
                     isMenuShown => isMenuShown ?
@@ -32,17 +32,14 @@ const Header = () => {
             >
                 {() =>
                     <StyledMenuAntd>
-                        <Menu.Item key='/' className={'menu'}>
-                            <a href={'/#'}>HOME</a>
-                        </Menu.Item>
                         <Menu.Item key='/#portfolio' className={'menu'}>
-                            <a href={'/#portfolio'}>PORTFOLIO</a>
+                            <Link smooth to="#portfolio">PORTFOLIO</Link>
                         </Menu.Item>
                         <Menu.Item key='/#resumo' className={'menu'}>
-                            <a href={'/#resumo'}>SOBRE MIM</a>
+                            <Link smooth to="#resume">SOBRE MIM</Link>
                         </Menu.Item>
                         <Menu.Item key='/#contato' className={'menu'}>
-                            <a href={'/#contato'}>CONTATO</a>
+                            <Link smooth to="#contact">CONTATO</Link>
                         </Menu.Item>
                     </StyledMenuAntd>
                 }

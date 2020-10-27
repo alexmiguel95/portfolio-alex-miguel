@@ -34,7 +34,7 @@ const Portfolio = () => {
     ];
 
     return(
-        <div>
+        <div id="portfolio">
         {
             listProjects.map((item, key) => {
                 return(
