@@ -17,5 +17,6 @@ alexmiguel95@gmail.com
 
 ## Pontos a melhorar na aplicação
 
-- [] Adicionar screenshots das telas principais.
-- [] Adicionar um .gif da aplicação funcionando.
+- [ ] Adicionar screenshots das telas principais da aplicação.
+- [ ] Adicionar um .gif da aplicação funcionando.
+- [ ] Revisar design do layout.
