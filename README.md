@@ -14,3 +14,8 @@
 **[Alex Miguel](https://www.linkedin.com/in/alexmiguel95/)**
 
 alexmiguel95@gmail.com
+
+## Pontos a melhorar na aplicação
+
+- [] Adicionar screenshots das telas principais.
+- [] Adicionar um .gif da aplicação funcionando.
