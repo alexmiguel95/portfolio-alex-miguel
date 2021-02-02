@@ -17,7 +17,7 @@ alexmiguel95@gmail.com
 
 ## Pontos a melhorar na aplicação
 
-- [ X ] Adicionar informações sobre como rodar o projeto localmente.
+- [X] Adicionar informações sobre como rodar o projeto localmente.
 - [ ] Adicionar screenshots das telas principais da aplicação.
 - [ ] Adicionar um .gif da aplicação funcionando.
 - [ ] Revisar design do layout.
