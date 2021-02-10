@@ -10,7 +10,7 @@
 
 
 &nbsp;  
-#### Desenvolvidor por
+#### Desenvolvido por
 **[Alex Miguel](https://www.linkedin.com/in/alexmiguel95/)**
 
 alexmiguel95@gmail.com
